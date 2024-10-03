@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: beige;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  background-color: thistle;
+  gap: 1rem;
+  float: right;
+}
+
+.nav .title {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1.5rem;
+  gap: 2rem;
+  font-size: 25px;
+  color: white;
+}
+
+.nav .title span {
+  color: purple;
+}
+
+.nav .navbar a {
+  font-family: arial;
+  font-weight: bold;
+  display: inline-block;
+  align-items: center;
+  font-size: 20px;
+  margin: 0 0.5rem;
+  color: white;
+}
+
+.nav .navbar a:hover {
+  color: purple;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 9rem 5%;
+}
+
+.home .img {
+  justify-content: space-between;
+}
+
+.home .img img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.content {
+  margin-top: 2.5rem;
+}
+
+.content h1 {
+  font-family: arial;
+  font-size: 2.5rem;
+  color: purple;
+}
+
+.content p {
+  align-items: center;
+  font-family: arial;
+  font-size: 1.2rem;
+  color: purple;
+}
+
+.achieve {
+ margin-bottom: 10%;
+  padding: 7rem 7%;
+}
+
+.achieve h1 {
+  text-align: center;
+  font-family: arial;
+  font-size: 2.5rem;
+  color: purple;
+  margin-bottom: 80px;
+}
+
+.achieve p {
+  font-family: arial;
+  color: purple;
+  font-size: 1.2rem;
+  margin: 1.5rem;
+}
+
+.contact {
+  background-color: purple;
+  text-align: center;
+}
+
+.contact h1 {
+  font-family: arial;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.contact a {
+  font-family: arial;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+}
+
+@media (width < 520) {
+    .nav {
+        padding: 0.5rem 1%;
+        gap: 1rem;
+    }
+
+    .nav .title {
+        font-size: small;
+    }
+
+    .nav .navbar a {
+        font-size: small;
+    }
+}

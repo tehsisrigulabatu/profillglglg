@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#title" class="title" id="judul"><span>Profile</span></a>
+
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#achieve">Achieve</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="img">
+        <img src="fotogwa.jpg" alt="Ini foto saya" />
+
+        <div class="content">
+          <p>halo! aku</p>
+          <h1>Melodia Nur Insani Syadenia Reza</h1>
+          <p id="desc">
+            Aku lahir di Surabaya, pada tanggal 7 April 2007. Saat ini aku
+            sedang bersekolah di SMK Negeri 1 Surabaya, jurusan Rekayasa
+            Perangkat Lunak.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="achieve" id="achieve">
+      <h1>Pencapaian saya selama bersekolah di sini</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ut
+        distinctio perspiciatis itaque sapiente eveniet eius ab quos mollitia
+        debitis, atque inventore? Tempora dolorum quasi praesentium? Eos earum
+        aliquam tenetur odio ipsa aliquid. Doloribus, obcaecati est.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ut
+        distinctio perspiciatis itaque sapiente eveniet eius ab quos mollitia
+        debitis, atque inventore? Tempora dolorum quasi praesentium? Eos earum
+        aliquam tenetur odio ipsa aliquid. Doloribus, obcaecati est.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ut
+        distinctio perspiciatis itaque sapiente eveniet eius ab quos mollitia
+        debitis, atque inventore? Tempora dolorum quasi praesentium? Eos earum
+        aliquam tenetur odio ipsa aliquid. Doloribus, obcaecati est.
+      </p>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>Hubungi saya di</h1>
+        <a href="https://instagram.com/meosccle"><i data-feather="instagram"></i></a>
+        <a href="https://x.com/sateuru"><i data-feather="twitter"></i></a>
+        <a href="https://github.com/tehsisrigulabatu"><i data-feather="github"></i></a>
+    </div>
+        
+    <script>
+      feather.replace();
+
+      <!-- const content = document.getElementByClassName("content"); -->
+      const desc = document.getElementById("desc");
+      desc.textContent = "Aku lahir di Surabaya, pada tanggal 7 April 2007. Saat ini aku sedang bersekolah di SMK Negeri 1 Surabaya, jurusan Rekayasa Perangkat Lunak. 2026 saya kuliah di FTEIC-ITS. AAMIIN";
+   
+      const achieve = document.getElementById("achieve");
+      console.log(achieve);
+      const capai = document.createElement("p");
+      capai.textContent = "Pencapaian terbesar yang saya dapatkan di usia 17 tahun adalah tetap istiqomah berada di jurusan RPL. ;))";
+      achieve.appendChild(capai);
+
+     // capai.remove();
+
+    </script>
+  </body>
+</html>
